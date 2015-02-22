@@ -1,6 +1,26 @@
 
 #Study Design
-(thorough description of how you collected the data)
+
+The data is dowloaded to a 'Data' directory from [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  The files containg the data are:
+
+- 'features.txt': List of all features.
+- 'activity_labels.txt': Links the class labels with their activity name.
+- 'train/X_train.txt': Training set.
+- 'train/y_train.txt': Training labels.
+- 'test/X_test.txt': Test set.
+- 'test/y_test.txt': Test labels.
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+- 'train/subject_test.txt': Same as previous
+
+The raw data is loaded into data sets for transformations.  For each record, the following is provided:
+ 
+- A 561-feature vector with time and frequency domain variables (x_test and x_train).
+- Its activity label (y_test and y_train).
+- An identifier of the subject who carried out the experiment (subject_test and subject_train).
+
+The data is combined for test and training results, the variables of the data set are given descriptive names, and the activities are given descriptive activity names.  The resulting combined data set is 10299 observations of 81 variables.
+
+The tidy data set contains only the measurements on the mean and standard deviation for each measurement.  The tidy data set is then aggregated with the average of each variable for each activity and each subject.  The resulting tidy data contains 180 observations (30 subjects X 6 activities) of 81 variables (79 variables containing either 'mean' or 'std' plus 'Subject' and 'Activity')
 
 #Code Book
 
