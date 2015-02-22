@@ -76,7 +76,7 @@ combined_data <- combined_data[, c(mean_std_measures, 562, 564)
 
 
 #############################################################################
-## From the data set in the previous step, creates a second, independent tidy data 
+## From the data set in the previous step, create a second, independent tidy data 
 ## set with the average of each variable for each activity and each subject.
 
 tidy <- aggregate(combined_data[1:79], FUN=mean,
