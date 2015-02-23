@@ -22,6 +22,11 @@ The data is combined for test and training results, the variables of the data se
 
 The tidy data set contains only the measurements on the mean and standard deviation for each measurement.  The tidy data set is then aggregated with the average of each variable for each activity and each subject.  The resulting tidy data contains 180 observations (30 subjects X 6 activities) of 81 variables (79 variables containing either 'mean' or 'std' plus 'Subject' and 'Activity')
 
+The tidy data set was written as a txt file with write.table() using row.name=FALSE and sep = ",".  It can be read using the following:
+
+    data <- read.table("tidy.txt", header = T, sep = ",") 
+    View(data)
+    
 #Code Book
 
 |   |varName 						|varType 	|varRange				|

@@ -13,3 +13,5 @@ This project repo contains one R script called [run_analysis.R](https://github.c
 - Creates a tidy data set with the average of each variable for each activity and each subject.
 
 This project repo also contains a code book that describes the variables, the data, and the work that was performed to clean up the data called [CodeBook.md](https://github.com/coursera-2015/TidyDataProject/blob/master/CodeBook.md).
+
+The tidy data set can be found here, [tidy.txt](https://s3.amazonaws.com/coursera-uploads/user-713cc2d24ddf642128e0ac67/973498/asst-3/b21aa270bae311e49603271ba0bb17e1.txt)
